@@ -10,9 +10,9 @@ using namespace std;
 
 
 Deck::Deck(){
-    for(int k = 0; k <4; k++){
+    for(int k = Card::spades; k <= Card::clubs; k++){
         for (int i = 1; i < 14; i++) {
-            myCards[myIndex] = Card(i, k);                               //FIX THIS
+            myCards[myIndex] = Card(i, (Card::Suit) k);                               
             myIndex++;
         }
     }

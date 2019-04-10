@@ -7,6 +7,10 @@
 
 using namespace std;
 
+Player::Player(){
+    myName = "Joseph James Williams";
+}
+
 void Player::addCard(Card c){
     myHand.push_back(c);
 }
