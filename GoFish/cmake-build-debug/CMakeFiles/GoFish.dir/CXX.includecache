@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/JEK/Documents/GoFish/card.h
+iostream
+-
+string
+-
+
+C:/Users/JEK/Documents/GoFish/deck.cpp
+deck.h
+C:/Users/JEK/Documents/GoFish/deck.h
+cstdlib
+-
+
+C:/Users/JEK/Documents/GoFish/deck.h
+card.h
+C:/Users/JEK/Documents/GoFish/card.h
+
