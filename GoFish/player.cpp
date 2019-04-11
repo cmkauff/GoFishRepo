@@ -22,9 +22,11 @@ void Player::bookCards(Card c1, Card c2){
     myBook.push_back(c1);                                                                       //PUT THE CARDS IN THE BOOK
     myBook.push_back(c2);
     for(int i = 0; i < myHand.size(); i++) {                                                      //ERASE THE CARDS IN THE HAND
-        if((myHand[i] == c1) || (myHand[i] == c2)){
-                myHand.erase(myHand.begin() + i);
-                i = 0;
+        if((myHand[i] == c1)){
+            removeCardFromHand(c1);
+        }
+        if((myHand[i] == c2)){
+            removeCardFromHand(c2);
         }
     }
 }
@@ -88,7 +90,7 @@ Card Player::removeCardFromHand(Card c){
             return c1;
         }
     }
-    return c1;
+    //return c1;
 }
 
 string Player::showHand() const{                        //RETURNS THE STRING OF CARDS? WHERE ARE THEY PRINTED... SAME FOR BOOK vvv

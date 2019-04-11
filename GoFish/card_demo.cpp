@@ -11,8 +11,8 @@ using namespace std;
 
 // PROTOTYPES for functions used by this demonstration program:
 void dealHand(Deck &d, Player &p, int numCards);
-
-
+void emptyHand(Deck &d, Player &p);
+void goFish(Deck &d, Player &p);
 
 
 int main( )
@@ -29,25 +29,19 @@ int main( )
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
     Card c1;
     Card c2;
-    Card c3;
     while(p1.checkHandForBook(c1,c2)){
         p1.bookCards(c1,c2);
     }
     while(p2.checkHandForBook(c1,c2)){
         p2.bookCards(c1,c2);
     }
+
     cout << p1.getName() <<" has : " << p1.showHand() << endl;
     cout << p1.getName() << " book : " << p1.showBooks() << endl;
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
     cout << p2.getName() << " book : " << p2.showBooks() << endl;
-    if((p1.getHandSize() == 0) && (d.size() != 0)){
-        c3 = d.dealCard();
-        p1.addCard(c3);
-    }
-    if((p2.getHandSize() == 0) && (d.size() != 0)){
-        c3 = d.dealCard();
-        p2.addCard(c3);
-    }
+    emptyHand(d,p1);
+    emptyHand(d,p2);
 
 
     while( (d.size() != 0) ){
@@ -57,69 +51,44 @@ int main( )
         while((p2.rankInHand(c1))){
             cout << p2.getName() << " says: I do" << endl;
             c2 = p2.removeCardFromHand(c1);
-            if((p2.getHandSize() == 0) && (d.size() != 0)){
-                c3 = d.dealCard();
-                p2.addCard(c3);
-            }
+            emptyHand(d,p2);
+
             p1.addCard(c2);
             p1.bookCards(c1, c2);
             cout << p1.getName() << " book : " << p1.showBooks() << endl;
+            emptyHand(d,p1);
 
-            if((p1.getHandSize() == 0) && (d.size() != 0)){
-                c3 = d.dealCard();
-                p1.addCard(c3);
+            if(p1.getHandSize() != 0) {
+                c1 = p1.chooseCardFromHand();
+                cout << p1.getName() << " says: Do you have any " << c1.getRank() << "'s ?" << endl;
             }
-            c1 = p1.chooseCardFromHand();
-            cout << p1.getName() << " says: Do you have any " << c1.getRank() << "'s ?" << endl;
         }
+
         cout << p2.getName() << " says: Go Fish!" << endl;
-        if((d.size() != 0)){
-            c1 = d.dealCard();
-            p1.addCard(c1);
-            while(p1.checkHandForBook(c1,c2)){
-                p1.bookCards(c1,c2);
-            }
-        }
-
-        if((p1.getHandSize() == 0) && (d.size() != 0)){
-            c3 = d.dealCard();
-            p1.addCard(c3);
-        }
+        goFish(d,p1);
+        emptyHand(d,p1);
 
         c1 = p2.chooseCardFromHand();
         cout << p2.getName() << " says: Do you have any " << c1.getRank() << "'s ?" << endl;
         while(p1.rankInHand(c1)){
             cout << p1.getName() << " says: I do" << endl;
             c2 = p1.removeCardFromHand(c1);
-            if((p1.getHandSize() == 0) && (d.size() != 0)){
-                c3 = d.dealCard();
-                p1.addCard(c3);
-            }
+            emptyHand(d,p1);
+
             p2.addCard(c2);
             p2.bookCards(c1, c2);
             cout << p2.getName() << " book : " << p2.showBooks() << endl;
+            emptyHand(d,p2);
 
-            if((p2.getHandSize() == 0) && (d.size() != 0)){
-                c3 = d.dealCard();
-                p2.addCard(c3);
+            if(p2.getHandSize() != 0) {
+                c1 = p2.chooseCardFromHand();
+                cout << p2.getName() << " says: Do you have any " << c1.getRank() << "'s ?" << endl;
             }
-            c1 = p2.chooseCardFromHand();
-            cout << p2.getName() << " says: Do you have any " << c1.getRank() << "'s ?" << endl;
-
         }
 
         cout << p1.getName() << " says: Go Fish!" << endl;
-        if(d.size() != 0){
-            c1 = d.dealCard();
-            p2.addCard(c1);
-            while(p2.checkHandForBook(c1,c2)){
-                p2.bookCards(c1,c2);
-            }
-        }
-        if((p2.getHandSize() == 0) && (d.size() != 0)){
-            c3 = d.dealCard();
-            p2.addCard(c3);
-        }
+        goFish(d,p2);
+        emptyHand(d,p2);
 
     }
 
@@ -146,6 +115,24 @@ void dealHand(Deck &d, Player &p, int numCards)
     for (int i=0; i < numCards; i++)
         p.addCard(d.dealCard());
 }
-   
 
+void emptyHand(Deck &d, Player &p)
+{
+    if(d.size() != 0 & p.getHandSize() == 0) {
+        Card c, c1;
+        c = d.dealCard();
+        p.addCard(c);
+    }
+}
 
+void goFish(Deck &d, Player &p)
+{
+    Card c, c1;
+    if((d.size() != 0)){
+        c = d.dealCard();
+        p.addCard(c);
+        while(p.checkHandForBook(c,c1)){
+            p.bookCards(c,c1);
+        }
+    }
+}

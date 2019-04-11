@@ -6,21 +6,37 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/glenn/CLionProjects/GoFishRepo/GoFish/card.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/card.h
 iostream
 -
 string
 -
 
-C:/Users/glenn/CLionProjects/GoFishRepo/GoFish/player.cpp
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/card_demo.cpp
+iostream
+-
+cstdlib
+-
+card.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/card.h
 player.h
-C:/Users/glenn/CLionProjects/GoFishRepo/GoFish/player.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.h
+deck.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/deck.h
+
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/deck.h
+card.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/card.h
+
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.cpp
+player.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.h
 cstdlib
 -
 time.h
 -
 
-C:/Users/glenn/CLionProjects/GoFishRepo/GoFish/player.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.h
 iostream
 -
 string
@@ -28,5 +44,5 @@ string
 vector
 -
 card.h
-C:/Users/glenn/CLionProjects/GoFishRepo/GoFish/card.h
+C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/card.h
 
