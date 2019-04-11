@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/JEK/Desktop/GoFish/card.cpp" "C:/Users/JEK/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.obj"
-  "C:/Users/JEK/Desktop/GoFish/card_demo.cpp" "C:/Users/JEK/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card_demo.cpp.obj"
-  "C:/Users/JEK/Desktop/GoFish/deck.cpp" "C:/Users/JEK/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.obj"
-  "C:/Users/JEK/Desktop/GoFish/player.cpp" "C:/Users/JEK/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.obj"
+  "C:/Users/JEK/Documents/GoFishRepo/GoFish/card.cpp" "C:/Users/JEK/Documents/GoFishRepo/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.obj"
+  "C:/Users/JEK/Documents/GoFishRepo/GoFish/card_demo.cpp" "C:/Users/JEK/Documents/GoFishRepo/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card_demo.cpp.obj"
+  "C:/Users/JEK/Documents/GoFishRepo/GoFish/deck.cpp" "C:/Users/JEK/Documents/GoFishRepo/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.obj"
+  "C:/Users/JEK/Documents/GoFishRepo/GoFish/player.cpp" "C:/Users/JEK/Documents/GoFishRepo/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
