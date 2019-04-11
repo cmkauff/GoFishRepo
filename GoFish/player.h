@@ -20,9 +20,7 @@ class Player
 public:
     Player();
 
-    Player(string name) {
-        myName = name;
-    }
+    Player(string name);
 
     string getName() const {
         return myName;

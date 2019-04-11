@@ -55,6 +55,9 @@ string Card::rankString(int r) const{
         case 1:
             cardName = "A";
             break;
+        case 10:
+            cardName ="10";
+            break;
         case 11:
             cardName = "J";
             break;

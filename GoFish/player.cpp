@@ -4,11 +4,15 @@
 
 #include "player.h"
 #include <cstdlib>
+#include <time.h>
 
 using namespace std;
 
 Player::Player(){
     myName = "Joseph James Williams";
+}
+Player::Player(string name) {
+    myName = name;
 }
 
 void Player::addCard(Card c){
@@ -18,8 +22,9 @@ void Player::bookCards(Card c1, Card c2){
     myBook.push_back(c1);                                                                       //PUT THE CARDS IN THE BOOK
     myBook.push_back(c2);
     for(int i = 0; i < myHand.size(); i++) {                                                      //ERASE THE CARDS IN THE HAND
-        if((myHand[i].getRank() == c1.getRank()) || (myHand[i].getRank() == c2.getRank())){
+        if((myHand[i] == c1) || (myHand[i] == c2)){
                 myHand.erase(myHand.begin() + i);
+                i = 0;
         }
     }
 }
@@ -47,7 +52,7 @@ bool Player::checkHandForBook(Card &c1, Card &c2){
 //Does the player have a card with the same rank as c in her hand?
 bool Player::rankInHand(Card c) const{
     for(int i = 0; i < myHand.size(); i++){
-        if(myHand[i].getRank() == c.getRank()){ //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< get rank or myrank?
+        if(myHand[i].getRank() == c.getRank()){
             return true;
         }
     }
@@ -57,6 +62,8 @@ bool Player::rankInHand(Card c) const{
 //uses some strategy to choose one card from the player's
 //hand so they can say "Do you have a 4?"
 Card Player::chooseCardFromHand() const{
+    unsigned int currentTime = (unsigned)time(0);
+    srand(currentTime);
     int randomNum = (rand() % myHand.size());
     return(myHand[randomNum]);                            // .rankString(getRank()) WOULD GIVE THE NUMBER IN ASCII
 }
@@ -73,14 +80,15 @@ bool Player::cardInHand(Card c) const{
 
 //Remove the card c from the hand and return it to the caller
 Card Player::removeCardFromHand(Card c){
+    Card c1;
     for(int k = 0; k < myHand.size(); k++) {
-        if (myHand[k] == c) {
+        if (myHand[k].getRank() == c.getRank()) {
+            c1 = myHand[k];
             myHand.erase (myHand.begin()+ k);
-            return c;
+            return c1;
         }
-    }                                                           //SHOULD WE RETURN NULL FOR AN UNSUCCESSFUL REMOVAL?
-    cout << "did not remove card properly: " << c.toString() << endl;
-    return c;
+    }
+    return c1;
 }
 
 string Player::showHand() const{                        //RETURNS THE STRING OF CARDS? WHERE ARE THEY PRINTED... SAME FOR BOOK vvv
@@ -104,7 +112,7 @@ int Player::getHandSize() const{
     return (myHand.size());
 }
 int Player::getBookSize() const{
-    return (myBook.size());
+    return (myBook.size()/2);
 }
 
 //BELOW ARE FUNCTIONS COMPLETELY THE SAME AS CHECKHANDFORBOOK AND RANKINHAND RESPECTIVELY
