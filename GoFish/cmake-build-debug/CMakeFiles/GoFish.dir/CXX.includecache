@@ -23,18 +23,12 @@ player.h
 C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.h
 deck.h
 C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/deck.h
+fstream
+-
 
 C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/deck.h
 card.h
 C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/card.h
-
-C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.cpp
-player.h
-C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.h
-cstdlib
--
-time.h
--
 
 C:/Users/glenn/Documents/GitHub/GoFishRepo/GoFish/player.h
 iostream

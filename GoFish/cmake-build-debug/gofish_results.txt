@@ -1,0 +1,121 @@
+Kate has : 5s 7c Ac 5h 10h 4h 5c 
+Glenn has : Kh 8c 9d 6c Jh 6s Qh 
+Kate has : 7c Ac 10h 4h 5c 
+Kate book : 5s 5h 
+Glenn has : Kh 8c 9d Jh Qh 
+Glenn book : 6c 6s 
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 13's ?
+Kate says: Go Fish!
+Kate says: Do you have any 5's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 12's ?
+Kate says: Go Fish!
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 13's ?
+Kate says: Go Fish!
+Kate says: Do you have any 2's ?
+Glenn says: I do
+Kate book : 5s 5h 10h 10s 2s 2d 
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 13's ?
+Kate says: Go Fish!
+Kate says: Do you have any 12's ?
+Glenn says: I do
+Kate book : 5s 5h 10h 10s 2s 2d Qs Qh 
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 3's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 
+Glenn says: Do you have any 11's ?
+Kate says: Go Fish!
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 5's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 
+Glenn says: Do you have any 11's ?
+Kate says: Go Fish!
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 1's ?
+Kate says: Go Fish!
+Kate says: Do you have any 8's ?
+Glenn says: I do
+Kate book : 5s 5h 10h 10s 2s 2d Qs Qh Ac Ah 8d 8c 
+Kate says: Do you have any 10's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 4's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h 
+Glenn says: Do you have any 1's ?
+Kate says: Go Fish!
+Kate says: Do you have any 9's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 2's ?
+Kate says: Go Fish!
+Kate says: Do you have any 11's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 2's ?
+Kate says: Go Fish!
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 3's ?
+Kate says: Go Fish!
+Kate says: Do you have any 13's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 8's ?
+Kate says: Go Fish!
+Kate says: Do you have any 10's ?
+Glenn says: I do
+Kate book : 5s 5h 10h 10s 2s 2d Qs Qh Ac Ah 8d 8c 7c 7d 10d 10c 
+Kate says: Do you have any 6's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 8's ?
+Kate says: Go Fish!
+Kate says: Do you have any 9's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 8's ?
+Kate says: Go Fish!
+Kate says: Do you have any 3's ?
+Glenn says: I do
+Kate book : 5s 5h 10h 10s 2s 2d Qs Qh Ac Ah 8d 8c 7c 7d 10d 10c Ks Kd 3c 3h 
+Kate says: Do you have any 6's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 12's ?
+Kate says: Go Fish!
+Kate says: Do you have any 4's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 12's ?
+Kate says: Go Fish!
+Kate says: Do you have any 4's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 8's ?
+Kate says: Go Fish!
+Kate says: Do you have any 7's ?
+Glenn says: Go Fish!
+Glenn says: Do you have any 11's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h Jh Jc 2c 2h Ad As Qc Qd Jd Js 
+Glenn says: Do you have any 8's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h Jh Jc 2c 2h Ad As Qc Qd Jd Js 8h 8s 
+Glenn says: Do you have any 6's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h Jh Jc 2c 2h Ad As Qc Qd Jd Js 8h 8s 6h 6d 
+Glenn says: Do you have any 4's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h Jh Jc 2c 2h Ad As Qc Qd Jd Js 8h 8s 6h 6d 4s 4c 
+Glenn says: Do you have any 7's ?
+Kate says: I do
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h Jh Jc 2c 2h Ad As Qc Qd Jd Js 8h 8s 6h 6d 4s 4c 7s 7h 
+Kate says: Go Fish!
+Glenn WINS! Book Size: 15
+Kate has : 
+Glenn has : 
+Kate book : 5s 5h 10h 10s 2s 2d Qs Qh Ac Ah 8d 8c 7c 7d 10d 10c Ks Kd 3c 3h 9s 9h 
+Glenn book : 6c 6s 9d 9c Kh Kc 3s 3d 5d 5c 4d 4h Jh Jc 2c 2h Ad As Qc Qd Jd Js 8h 8s 6h 6d 4s 4c 7s 7h 
